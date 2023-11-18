@@ -8,16 +8,16 @@ class ProfileController extends Controller
 {
     //
     function index($id=null){
-       $name = "Donald Trump";
-       $age = "75";
+       $p_name = "Donald Trump";
+       $p_age = "75";
        $data = array(
         "id"=> $id,
-        "name"=> $name,
-        "age"=> $age
+        "name"=> $p_name,
+        "age"=> $p_age
        );
        return response()->json($data)->cookie( $name = "access_token",
        $value = "123-XYZ",
-       $minutes = 60,
+       $minutes = 1,
        $path = "/",
        $domain =$_SERVER['SERVER_NAME'],
        $secure = false,
